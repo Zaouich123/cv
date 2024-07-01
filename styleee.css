@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Root and default */
+*
+{
+  list-style-type: none;
+  text-decoration: None;
+  scroll-behavior: smooth;
+}
+
+
+:root{
+  --Bleu: rgb(0,80,255);
+  --Jaune: rgb(255, 217, 0);
+  --Poppins: 'Poppins', sans-serif;
+  --sectionbleu: rgb(68, 149, 255);
+  --Blanc: rgb(255, 255, 255);
+  --couleur-police: rgb(37, 37, 37);
+}
+
+body
+{
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+  color:var(--couleur-police);
+  background: var(--Blanc);
+  
+}
+/* HEADER */
+header
+{
+  width: 100%;
+  top:0;
+  position: fixed;
+  background: var(--Blanc);
+}
+
+header nav
+{
+
+  padding: 30px 4% 0 4%;
+  display : flex;
+  flex-wrap : wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav h1
+{
+  margin:0;
+  text-transform: uppercase;
+  color: var(--Bleu);
+}
+
+header nav #droite
+{
+  display:flex;
+  align-items: center;
+}
+
+header nav #droite li p
+{
+  margin: 0 15px 0 0;
+  color: rgb(95, 94, 94);
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s ;
+}
+
+header nav #droite li p:hover 
+{
+  color:Blue;
+}
+
+header nav #droite #bouttoncontact
+{
+  padding: 5px 15px;
+  font-size: 16px;
+  background-color: inherit;
+  border: 1px solid var(--Bleu);
+  color: var(--Bleu);
+  border-radius: 6px;
+  cursor:pointer;
+  transition: background-color 0.3s, color 0.3s ;
+}
+header nav #droite #bouttoncontact:hover 
+{
+  background-color: var(--Bleu);
+  color:var(--Blanc);
+}
+
+/*SECTION 1*/
+main .page #propos
+{
+  
+  margin-top: 5%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+main .page #propos #text-droite
+{
+  width: 100%;
+}
+
+main .page #propos h1
+{
+  margin:0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--Poppins);
+  font-size: 100px;
+}
+
+main .page p
+{
+  line-height: 20px;
+  color:#818181;
+}
+main .page #text-droite
+{
+  padding: 5%;
+}
+
+main #reseau
+{
+  text-align: center;
+}
+
+main #reseau path
+{
+  height: 50px;
+  color: var(--Bleu);
+}
+
+/* HR (Blue bar) for section */
+
+
+hr
+{
+  border-bottom: 1px solid var(--Bleu) ;
+  width: 50%;
+}
+
+/* SECTION 2 */
+
+
+main .page h1
+{
+  color:var(--Bleu);
+}
+
+main .page #skill
+{
+  width: 100%;
+  height: 700px;
+  padding-top: 3%;
+  text-align: center;
+  align-items: center;
+  font-family: var(--Poppins);
+  background-color: var(--sectionbleu);
+}
+
+main .pro
+{
+  margin: 0 25%;
+  text-align: center;
+  align-items: center;
+  width: auto;
+  background-color: white;
+}
+
+main #skill img
+{
+  width:50%
+}
+
+/* Section 3 experience pro et formation */
+
+main .page #pro-forma
+{
+  width: 100%;
+  height: 700px;
+  padding-top: 3%;
+  text-align: center;
+  align-items: center;
+  font-family: var(--Poppins);
+}
+
+main #pro-forma h1
+{
+  color:var(--Bleu);
+  margin-bottom:5% ;
+}
+
+
+main #pro-forma h2
+{
+  color:var(--Jaune);
+  margin-bottom:5% ;
+}
+/* Section 4 hobbies et info */
+
+
+main .page #hob-info
+{
+  width: 100%;
+  height: 550px;
+  padding-top: 3%;
+  text-align: center;
+  align-items: center;
+  font-family: var(--Poppins);
+  background-color: var(--sectionbleu);
+}
+main .page #hob-info h1
+{
+  padding-top: 4%;
+}
+
+
+main #hob-info #Hobbies #padding-p
+{
+  padding-bottom: 4%;
+}
+
+/* Section 5 Contact */
+main #Contact fieldset
+{
+  display:flex;
+  justify-content: space-between;
+}
+
+
+main #Contact
+{
+  margin-bottom: 5%;
+}
+
+main #Contact 
+{
+  text-align: center ;
+}
+
+
+/* Footer*/
+
+
+footer
+{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  text-align: center;
+  bottom:0;
+  position: fixed;
+}
+
+
+
+/*RESPONSIVE */
+
+
+/*RESPONSIVE image propos */
+@media (max-width: 1200px){
+
+	main .page #propos img{
+		width: 100%;
+    margin-top: 30%;
+    height: auto;
+
+	}
+}
+
+/*RESPONSIVE text propos */
+
+@media (max-width: 1600px){
+
+	main .page #propos{
+		display: flex;
+    flex-wrap : wrap;
+
+	}
+}
+
+
+/*RESPONSIVE section */
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
+
+
+/*RESPONSIVE formation et pro */
+
+@media (max-width: 827px){
+  main .page #pro-forma{
+    padding-bottom:35% ;
+  }
+}
+
+@media (max-width: 650px){
+  main .page #pro-forma{
+    padding-bottom:55% ;
+  }
+}
+
+
+/*RESPONSIVE Contact */
+@media (max-width: 1900px){
+
+	main .page #Contact fieldset{
+    display: flex;
+    flex-wrap : wrap;
+    width:100%;
+
+	}
+}
+
+
+/* MAIN SECTION */
+
+
+@media (max-width:780px)
+{
+  header nav #droite li p {
+    font-size: 15px;
+  }
+}
+
+
+
+@media (max-width:640px)
+{
+  header nav{
+    text-align: center;
+  }
+}
